@@ -3,8 +3,7 @@ CS 7641 (Spring 2020)
 Assignment 1 Supervised Learning
 
 Code is located at 
-XXXXXX
-
+https://github.com/acudworth3/Supervised_Learning_Exploration.git
 
 acudworth3-analysis.pdf contains the analysis of learning models
 
