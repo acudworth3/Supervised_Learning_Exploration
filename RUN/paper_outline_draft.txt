@@ -1,0 +1,39 @@
+PAPER elements
+-description of classification problems
+    -Ecamine data
+
+x   -Train/Test error for all algorithims + datasets
+x   -Train/Test error as a function of training size
+        -via plot learning curve
+        -TODO add roc curve
+        -TODO maybe aplly this to train and test 
+        -maybe a precision recall graph
+
+-Train/Test error as a function of iterations (google learning curves)??? read a little more about this
+
+
+-why did you get the results that you did?
+-Changes to improve performance?
+-wall clock time
+-Would cross validation help (implement it)
+-View performance of various hyper parameters
+
+
+-which algorithim performed best
+-compare and constrast the algorithims
+-How much performance was due to problem chosen
+    -explore VC dims?
+-be creative
+
+after dinner
+-read 
+
+
+TODO BEFORE SUBMIT
+x   -example DATA RECORD (in intro)
+x   -model training accuracy
+x   -model training ROC
+x   -get rid of model performance chart
+-sources/citations
+x   -vary hyperparams
+-write Readme.md/organize code

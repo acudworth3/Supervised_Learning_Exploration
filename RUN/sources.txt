@@ -1,0 +1,35 @@
+bibgliography
+
+Data
+https://archive.ics.uci.edu/ml/datasets/Poker+Hand
+
+
+https://scikit-learn.org/stable/auto_examples/model_selection/plot_learning_curve.html
+https://towardsdatascience.com/knn-using-scikit-learn-c6bed765be75
+https://scikit-learn.org/stable/modules/model_evaluation.html#model-evaluation
+https://www.kaggle.com/chirag9073/airbnb-analysis-visualization-and-prediction
+
+https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html
+
+#GINI
+https://scikit-learn.org/stable/modules/tree.html#mathematical-formulation
+#PRUNING
+https://scikit-learn.org/stable/modules/tree.html#minimal-cost-complexity-prunin
+https://scikit-learn.org/stable/auto_examples/tree/plot_cost_complexity_pruning.html#sphx-glr-auto-examples-tree-plot-cost-complexity-pruning-pyg
+
+Dummy plot
+https://stackoverflow.com/questions/16010869/plot-a-bar-using-matplotlib-using-a-dictionary
+
+https://matplotlib.org/3.1.1/gallery/lines_bars_and_markers/barchart.html
+https://python-graph-gallery.com/11-grouped-barplot/
+
+Mitchell textbook
+
+
+plots
+https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html#plot-roc-curves-for-the-multilabel-problem
+https://scikit-learn.org/stable/modules/learning_curve.html#learning-curve
+https://scikit-learn.org/stable/auto_examples/model_selection/plot_learning_curve.html
+https://scikit-learn.org/stable/auto_examples/model_selection/plot_confusion_matrix.html#sphx-glr-auto-examples-model-selection-plot-confusion-matrix-py
+https://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html#sphx-glr-auto-examples-model-selection-plot-precision-recall-py
+https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html

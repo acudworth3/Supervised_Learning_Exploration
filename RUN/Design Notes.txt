@@ -1,0 +1,127 @@
+#Plan to use sklearn
+
+#helper functions
+    #all models should use this
+    #accuracy
+        #get some standard measures (ROC +train/testfit?)
+    #cross validation
+    #gridsearch? (grid search is not analysis)
+    #hyper parameters
+        -one learning curve+ one complexity analysis per algo for an hyperparam
+    #load data
+    #write unit tests for larger processes
+
+#Boosting
+#must be learner indipendant
+
+#office hour notes:
+-learning curve explains bias and variance
+-requires training and test curve
+-do not cross validate your test set
+-randomize data before split
+-"have to have learning curve and model complexity analysis for each algorithim for each dataset"
+-algorithims should have different performance
+-try to cover hyperparamters
+-model complexity analysis: give hyper parameter what does changing the value mean
+
+#reading notes:
+low-bias = good training fit
+variance = literally standard deviation^2
+
+
+#DATA Cleaning
+#Airbnb data: 
+    -do something with text data for fun
+    -lots of categorical data
+    -some continuous data
+#terrorist data: (too small?)
+    -decide how much suspect info to add
+
+#NN
+-asses simple perceptron vs sigmoid
+
+#LEARNING Curves
+-randomize data for each cv fold
+learning_curve(shuffle=True)
+https://www.dataquest.io/blog/learning-curves-machine-learning/ 
+    -curve demonstrates when to stop adding data
+    -reread and take notes
+    -training error- validation error = gap = variance
+    -provides advice on variance/bias tradeoff
+    
+
+#experiment 1
+
+#experiment 2
+
+
+SOURCES:
+https://www.kaggle.com/chirag9073/airbnb-analysis-visualization-and-prediction
+https://www.kaggle.com/dgomonov/data-exploration-on-nyc-airbnb
+https://github.com/JonathanTay/CS-7641-assignment-1
+https://github.com/cmaron/CS-7641-assignments/tree/master/assignment1
+https://github.com/martzcodes/machine-learning-assignments
+https://scikit-learn.org/stable/auto_examples/model_selection/plot_learning_curve.html
+
+https://www.kaggle.com/dgomonov/data-exploration-on-nyc-airbnb 
+https://archive.ics.uci.edu/ml/datasets/Poker+Hand
+https://towardsdatascience.com/knn-using-scikit-learn-c6bed765be75
+https://scikit-learn.org/stable/modules/neural_networks_supervised.html
+https://scikit-learn.org/stable/model_selection.html (very handy)
+https://scikit-learn.org/stable/user_guide.html
+https://scikit-learn.org/stable/modules/tree.html
+
+
+PAPER elements
+-description of classification problems
+-Train/Test error for all algorithims + datasets
+-Train/Test error as a function of training size
+-Train/Test error as a function of iterations (google learning curves)
+
+
+-View performance of various hyper parameters
+    -code:run gridsearch with different scoring
+    -validation curve: https://scikit-learn.org/stable/auto_examples/model_selection/plot_validation_curve.html
+-How much performance was due to problem chosen
+    -code:assign dummy estimator?
+
+
+-compare and constrast the algorithims
+-why did you get the results that you did?
+-Changes to improve performance?
+-wall clock time
+-Would cross validation help (implement it)
+
+-which algorithim performed best
+-be creative
+
+additional:
+Query time?
+
+
+EVAL
+    -CROSS VALIDATION? (optional)
+    -VARY PARAMS
+    -pass hyper params
+    -model:
+        -train
+        -test
+    -error metrics
+    -standard plots
+    
+    
+    
+estimator = gridsearchcv(pipeline([preprocess, learner]))
+train gridsearch:
+split data into N sets of (train_i, validation_i) sets
+for 1 to N:
+2a. train/score pipeline on train_i/val_i set, which means:
+2.a.1 preprocess is fit on train_i
+2.a.2 (fitted) preprocess transforms train_i and val_i
+2.a.3 learner fit on transformed train_i, predicted on transformed val_i
+
+the good news for this is that for any (train_i,validation_i) set it has associated pipeline_i, which contains a preprocess_i and a learner_i, learner_i was fit on data preprocess_i(train_i) while preprocess_i is fit on train_i. the whole pipeline/gridsearchcv thing works well together. The important part here is that if you train preprocess on full data, then the information about the mean/sd on the test data has been leaked back because it was used to transform the training data
+so step 3 in pseudocode is :
+3a. fit preprocess on all data;
+3b. transform all data via preprocess;
+3c. fit learner on transformed data    
