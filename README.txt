@@ -2,8 +2,16 @@ Andrew Cudworth
 CS 7641 (Spring 2020)
 Assignment 1 Supervised Learning
 
+
 Code is located at 
 https://github.com/acudworth3/Supervised_Learning_Exploration.git
+
+sklearn and numpy are used heavily and cited througout analysis. 
+All Neccessary libraries are in requirenments.txt 
+heavily used refrences:
+https://scikit-learn.org/stable/user_guide.html
+https://scikit-learn.org/stable/auto_examples/model_selection/plot_learning_curve.html
+
 
 acudworth3-analysis.pdf contains the analysis of learning models
 
