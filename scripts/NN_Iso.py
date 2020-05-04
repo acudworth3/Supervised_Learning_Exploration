@@ -125,7 +125,7 @@ def NN_roc_gridSearch(data_obj, params):
     #                                       refit=True, n_jobs=3, verbose=2,scoring='roc_auc_ovr'))
 
 
-    clf_grid.fit(data_obj.x_train, data_obj.y_train)
+    clf_grid.fit(data_obj.x _train, data_obj.y_train)
 
     # y_prob = clf_grid.predict_proba(data_obj.x_test)
     # y_predict = clf_grid.predict(data_obj.x_test)

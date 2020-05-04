@@ -1,19 +1,17 @@
 Andrew Cudworth
-CS 7641 (Spring 2020)
+CS XXXX (Spring 2020)
 Assignment 1 Supervised Learning
+https://www.omscs.gatech.edu/cs-7641-machine-learning
 
 
-Code is located at 
-https://github.com/acudworth3/Supervised_Learning_Exploration.git
+Supervised Learning Methods-analysis.pdf contains the analysis of learning models
 
-sklearn and numpy are used heavily and cited througout analysis. 
-All Neccessary libraries are in requirenments.txt 
-heavily used refrences:
-https://scikit-learn.org/stable/user_guide.html
-https://scikit-learn.org/stable/auto_examples/model_selection/plot_learning_curve.html
-
-
-acudworth3-analysis.pdf contains the analysis of learning models
+Primary Topics:
+Neural Networks
+Decision Trees
+K-Nearest Neighbors
+Support Vector Machines
+Boosting
 
 Original Data:
 https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data (airbnb)
@@ -77,4 +75,20 @@ RUN contents
         data_explore.py: Figure 1 exploring airbnb data
         dummy_plot.py: Figure 2 Comparing Model Performance
         
+
+sklearn and numpy are used heavily and cited througout analysis. 
+All Neccessary libraries are in requirenments.txt 
+heavily used refrences:
+https://scikit-learn.org/stable/user_guide.html
+https://scikit-learn.org/stable/auto_examples/model_selection/plot_learning_curve.html
+
+
+
+
+
+PLAGARISM DISCLAIMER:
+If you are currently enrolled in the class this assignment was written for and copy exploration methods, report contents, or hyperparameters
+without attribution it is plagiarism. Additionally values in the reports and code have been modified to in a manner specific to this 
+repo allowing easy detection of copying.
+
         
